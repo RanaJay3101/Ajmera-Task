@@ -47,7 +47,7 @@ def save_to_csv(data, filename="flipkart_mobiles.csv"):
 
 if __name__ == "__main__":
     search_query = "iPhone"
-    for page_number in range(1, 3):
+    for page_number in range(1, 5):
         data = flipkart_scraper(search_query, page_number)
         if data:
             save_to_csv(data)
